@@ -13,7 +13,7 @@ namespace LABB_3___Polymofism
         public double Height { get; set; }
 
         // Constructor
-        public Rectangle(double width, double height string color, bool isFilled)
+        public Rectangle(double width, double height, string color, bool isFilled)
             : base(color, isFilled)
         {
             Width = width;
@@ -24,6 +24,5 @@ namespace LABB_3___Polymofism
         {
             Width * Height;
         }
-
     }
 }

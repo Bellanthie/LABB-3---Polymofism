@@ -11,6 +11,14 @@ namespace LABB_3___Polymofism
         public double SideLength { get; set; }
         public string Name { get; set; }
 
+        // Constructor
+        public Square(double SideLength, string Name, string Color, bool isFilled)
+            :base(color, isFilled)
+
+        {
+            SideLength = sideLength;
+            Name = name;
+        }
         public override double Area()
         {
             SideLength * SideLength;
