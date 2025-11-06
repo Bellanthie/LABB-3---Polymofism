@@ -12,6 +12,14 @@ namespace LABB_3___Polymofism
         public double Width { get; set; }
         public double Height { get; set; }
 
+        // Constructor
+        public Rectangle(double width, double height string color, bool isFilled)
+            : base(color, isFilled)
+        {
+            Width = width;
+            Height = height;
+        }
+
         public override Area()
         {
             Width * Height;
