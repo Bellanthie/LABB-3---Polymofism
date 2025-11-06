@@ -6,7 +6,15 @@ using System.Threading.Tasks;
 
 namespace LABB_3___Polymofism
 {
-    internal class Circle
+    public class Circle : Geometry
     {
+        public double Radius { get; set; }
+        public double Diameter => 2 * Radius;
+
+        public override double Area()
+        {
+            Math.PI* Radius *Radius;
+
+        }
     }
 }

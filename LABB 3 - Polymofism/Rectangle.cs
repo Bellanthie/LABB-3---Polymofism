@@ -7,7 +7,15 @@ using System.Threading.Tasks;
 namespace LABB_3___Polymofism
 {
 
-    internal class Rectangle
+    public class Rectangle : Geometry
     {
+        public double Width { get; set; }
+        public double Height { get; set; }
+
+        public override Area()
+        {
+            Width * Height;
+        }
+
     }
 }

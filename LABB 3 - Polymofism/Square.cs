@@ -6,7 +6,17 @@ using System.Threading.Tasks;
 
 namespace LABB_3___Polymofism
 {
-    internal class Square
+    public class Square : Geometry
     {
+        public double SideLength { get; set; }
+        public string Name { get; set; }
+
+        public override double Area()
+        {
+            SideLength * SideLength;
+
+        }
+
+
     }
 }
