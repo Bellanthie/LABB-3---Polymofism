@@ -12,19 +12,16 @@ namespace LABB_3___Polymofism
         public string Name { get; set; }
 
         // Constructor
-        public Square(double SideLength, string Name, string Color, bool isFilled)
-            :base(color, isFilled)
-
+        public Square(double sideLength, string name, string color, bool isFilled)
+            : base(color, isFilled)
         {
             SideLength = sideLength;
             Name = name;
         }
+
         public override double Area()
         {
-            SideLength * SideLength;
-
+            return SideLength * SideLength;
         }
-
-
     }
 }

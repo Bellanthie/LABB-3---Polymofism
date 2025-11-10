@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace LABB_3___Polymofism
 {
@@ -11,16 +7,18 @@ namespace LABB_3___Polymofism
         public double Radius { get; set; }
         public double Diameter => 2 * Radius;
 
-        public Circle(double Radius, string Color, bool isFilled)
+        // Use lowercase parameter names to avoid confusion with properties.
+        // Assume Geometry has a constructor that accepts (string color, bool isFilled).
+        public Circle(double radius, string color, bool isFilled)
             : base(color, isFilled)
         {
-            Radius = 5;
+            Radius = radius;
         }
 
-        public override double Area()
+        // Return type must be a numeric type (double). Match the base class signature.
+        public double Area()
         {
-            Math.PI* Radius * Radius;
-
+            return Math.PI * Radius * Radius;
         }
     }
 }
