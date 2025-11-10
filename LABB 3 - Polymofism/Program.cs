@@ -1,8 +1,11 @@
 ﻿namespace LABB_3___Polymofism
 {
-    public class Program
+    public class Geometry
     {
         //Attributes
+        public string color { get; set; }
+        public bool isFilled { get; set; }
+
 
         static void Main(string[] args)
         {

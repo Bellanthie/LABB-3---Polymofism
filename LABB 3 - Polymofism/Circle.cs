@@ -14,12 +14,12 @@ namespace LABB_3___Polymofism
         public Circle(double Radius, string Color, bool isFilled)
             : base(color, isFilled)
         {
-            Radius = radius;
+            Radius = 5;
         }
 
         public override double Area()
         {
-            Math.PI* Radius *Radius;
+            Math.PI* Radius * Radius;
 
         }
     }

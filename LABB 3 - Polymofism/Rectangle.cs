@@ -22,7 +22,7 @@ namespace LABB_3___Polymofism
 
         public override Area()
         {
-            Width * Height;
+            width * height;
         }
     }
 }

@@ -15,7 +15,8 @@ namespace LABB_3___Polymorfism
         public string Name { get; set; } = "No Sqare name yet";
         public double Height { get; set; } = 3;
         public double Width { get; set; } = 3;
-
+        public string Color { get; set; } = "Yellow";
+        public bool isFilled { get; set; } = true;
 
 
 
