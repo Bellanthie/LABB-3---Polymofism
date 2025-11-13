@@ -19,7 +19,7 @@ namespace LABB_3___Polymofism
         }
 
         // Return type must be a numeric type (double). Match the base class signature.
-        public double Area()
+        public override double Area()
         {
             return Math.PI * Radius * Radius;
         }

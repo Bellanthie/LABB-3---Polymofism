@@ -14,7 +14,7 @@ namespace LABB_3___Polymofism
         public double Height { get; set; }
 
         // Constructor
-        public Rectangle(double width, double Height)
+        public Rectangle()
 
         {
             Width = 5;

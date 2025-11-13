@@ -13,7 +13,7 @@ namespace LABB_3___Polymofism
         public double HeightLength { get; set; }
 
         // Constructor
-        public Square(double sideLength, double heightLength)
+        public Square()
         {
             SideLength = 7;
             HeightLength = 4;
