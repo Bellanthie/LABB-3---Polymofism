@@ -43,7 +43,7 @@
              * I need to implement the result av AREA calculation for each objeckt.
              * */
 
-
+            
         }
     }
 }

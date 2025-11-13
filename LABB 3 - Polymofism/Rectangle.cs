@@ -6,23 +6,24 @@ using System.Threading.Tasks;
 
 namespace LABB_3___Polymofism
 {
-
+    //  Subclass 'Rectangle' to Geometry
     public class Rectangle : Geometry
     {
         public double Width { get; set; }
         public double Height { get; set; }
 
         // Constructor
-        public Rectangle(double width, double height, string color, bool isFilled)
+        public Rectangle(double width, double Height, string color, bool isFilled)
             : base(color, isFilled)
         {
-            Width = width;
-            Height = height;
+            Width = 5;
+            Height = 3;
         }
 
-        public override Area()
+        // Rectangles method: Area
+        public override double Area()
         {
-            width * height;
+            return Width * Height;
         }
     }
 }

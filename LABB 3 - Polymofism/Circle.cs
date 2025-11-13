@@ -12,7 +12,7 @@ namespace LABB_3___Polymofism
         public Circle(double radius, string color, bool isFilled)
             : base(color, isFilled)
         {
-            Radius = radius;
+            Radius = 6;
         }
 
         // Return type must be a numeric type (double). Match the base class signature.
