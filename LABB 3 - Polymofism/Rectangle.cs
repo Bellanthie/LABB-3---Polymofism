@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LABB_3___Polymorfism;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,23 +7,24 @@ using System.Threading.Tasks;
 
 namespace LABB_3___Polymofism
 {
-
+    //  Subclass 'Rectangle' to Geometry
     public class Rectangle : Geometry
     {
         public double Width { get; set; }
         public double Height { get; set; }
 
         // Constructor
-        public Rectangle(double width, double height, string color, bool isFilled)
-            : base(color, isFilled)
+        public Rectangle()
+
         {
-            Width = width;
-            Height = height;
+            Width = 5;
+            Height = 3;
         }
 
-        public override Area()
+        // Rectangles method: Area
+        public override double Area()
         {
-            width * height;
+            return Width * Height;
         }
     }
 }
