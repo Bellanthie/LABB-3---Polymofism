@@ -1,16 +1,19 @@
-﻿using System;
+﻿using LABB_3___Polymorfism;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace LABB_3___Polymofism
 {
     public class Circle : Geometry
     {
         public double Radius { get; set; }
-        public double Diameter => 2 * Radius;
-
+       
         // Use lowercase parameter names to avoid confusion with properties.
         // Assume Geometry has a constructor that accepts (string color, bool isFilled).
-        public Circle(double radius, string color, bool isFilled)
-            : base(color, isFilled)
+        public Circle()
         {
             Radius = 6;
         }

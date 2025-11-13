@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LABB_3___Polymorfism;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,8 +13,7 @@ namespace LABB_3___Polymofism
         public double HeightLength { get; set; }
 
         // Constructor
-        public Square(double sideLength, double heightLength, string color, bool isFilled)
-            : base(color, isFilled)
+        public Square(double sideLength, double heightLength)
         {
             SideLength = 7;
             HeightLength = 4;

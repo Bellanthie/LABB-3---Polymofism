@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LABB_3___Polymorfism;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,8 +14,8 @@ namespace LABB_3___Polymofism
         public double Height { get; set; }
 
         // Constructor
-        public Rectangle(double width, double Height, string color, bool isFilled)
-            : base(color, isFilled)
+        public Rectangle(double width, double Height)
+
         {
             Width = 5;
             Height = 3;

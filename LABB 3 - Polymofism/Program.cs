@@ -1,17 +1,26 @@
-﻿namespace LABB_3___Polymofism
-        // ** Här skapar man nya objekt**
+﻿using LABB_3___Polymorfism;
+
+namespace LABB_3___Polymofism
+// ** Här skapar man nya objekt**
 {
     public class Program
     {
         static void Main(string[] args)
         {
-            Rectangle rect = new Rectangle(5, 10, "Blue", true);
-            Square square = new Square(4, 8, "Red", false);
-            Circle circle = new Circle(3, "Green", true);
+            Geometry rectangle = new Rectangle(5, 10);
+            Geometry square = new Square(4, 8);
+            Geometry circle = new Circle();
 
-            Console.WriteLine($"Rectangle area: {rect.Area()}");
+            Console.WriteLine($"Rectangle area: {rectangle.Area()}");
             Console.WriteLine($"Square area: {square.Area()}");
             Console.WriteLine($"Circle area: {circle.Area()}");
+
+            List<Geometry> GeometryList = [rectangle, square, circle];
+            foreach (var form in GeometryList)
+            {
+                form.Area();
+                Console.WriteLine($"The area of {form.GetType().Name} is {form.Area()}");
+            }
 
 
             /* I need to implement the loop that goes through each objecktreference and calls
@@ -19,7 +28,7 @@
              * I need to implement the result av AREA calculation for each objeckt.
              * */
 
-            
+
         }
     }
 }
