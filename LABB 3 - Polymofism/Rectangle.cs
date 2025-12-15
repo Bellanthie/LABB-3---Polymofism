@@ -5,15 +5,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LABB_3___Polymofism
+namespace LABB_3___Polymorfism
 {
     //  Subclass 'Rectangle' to Geometry
     public class Rectangle : Geometry
     {
+        // Rectangle Properties
         public double Width { get; set; }
         public double Height { get; set; }
 
-        // Constructor
+        // Rectangle Constructor
         public Rectangle()
 
         {
@@ -21,7 +22,7 @@ namespace LABB_3___Polymofism
             Height = 3;
         }
 
-        // Rectangles method: Area
+        // Rectangle's method: Area
         public override double Area()
         {
             return Width * Height;
